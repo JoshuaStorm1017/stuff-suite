@@ -1,0 +1,65 @@
+<!doctype html>
+<!-- OG image template. Regenerate og.png with:
+     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new \
+       --screenshot=og.png --window-size=1200,630 --hide-scrollbars assets/og.html -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    position: relative;
+    background: #0a0a0c;
+    color: #f4f4f5;
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding: 72px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.07) 1.5px, transparent 1.8px);
+    background-size: 34px 34px;
+    -webkit-mask-image: radial-gradient(95% 110% at 50% -10%, #000 25%, transparent 62%);
+    mask-image: radial-gradient(95% 110% at 50% -10%, #000 25%, transparent 62%);
+  }
+  body::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(700px 360px at 80% -14%, rgba(139,150,255,0.09), transparent 70%);
+  }
+  .wordmark { display: flex; align-items: center; gap: 16px; font-size: 28px; font-weight: 600; letter-spacing: -0.01em; }
+  h1 {
+    position: relative;
+    font-size: 84px;
+    font-weight: 600;
+    letter-spacing: -0.045em;
+    line-height: 1.05;
+  }
+  h1 span { color: #82828b; display: block; }
+  .fine {
+    position: relative;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 22px;
+    color: #82828b;
+  }
+</style>
+</head>
+<body>
+  <div class="wordmark">
+    <svg viewBox="0 0 24 24" width="40" height="40" aria-hidden="true">
+      <rect x="4" y="4.5" width="16" height="3.5" rx="1.75" fill="#f4f4f5"/>
+      <rect x="4" y="10.25" width="12" height="3.5" rx="1.75" fill="#8b96ff"/>
+      <rect x="4" y="16" width="8" height="3.5" rx="1.75" fill="#f4f4f5" opacity="0.35"/>
+    </svg>
+    The Stuff Suite
+  </div>
+  <h1>Free tools. No seats.<br>No caps. <span>No “upgrade to unlock.”</span></h1>
+  <p class="fine">free, self-hosted alternatives · MIT licensed · no telemetry</p>
+</body>
+</html>

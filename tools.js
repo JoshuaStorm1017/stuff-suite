@@ -1,0 +1,15 @@
+// The Stuff Suite — tool registry.
+// The grid renders entirely from this array. To add a tool: add one line. That's it.
+// Fields: name · tag ("free ___ alternative") · pitch (one line) · strike/after (the
+// pain it kills → what you get) · chips (stack) · repo (full URL, or null) · accent · status ("live" | "soon")
+
+const TOOLS = [
+  { name: "SnagStuff", tag: "Free Snagit alternative", pitch: "Full-page scrolling screenshots and annotation, in your browser. Chrome, Edge, Brave, Firefox, Safari.", strike: "license fee", after: "$0", chips: ["Browser extension", "Vanilla JS"], repo: "https://github.com/JoshuaStorm1017/snagstuff", accent: "#6cb4ff", status: "live" },
+  { name: "SnagStuff Desktop", tag: "Free Snagit alternative · desktop", pitch: "Capture any app on macOS and Windows — panoramic scroll-stitch, built-in editor, global hotkeys.", strike: "license fee", after: "$0, any app", chips: ["Python", "macOS · Windows"], repo: "https://github.com/JoshuaStorm1017/snagstuff-desktop", accent: "#8b96ff", status: "live" },
+  { name: "BookStuff", tag: "Free Calendly alternative", pitch: "Unlimited event types, reschedule and cancel links, email reminders, ICS feed.", strike: "$10–16/seat/mo", after: "$0", chips: ["Next.js + SQLite"], repo: "https://github.com/JoshuaStorm1017/bookstuff", accent: "#4ade96", status: "live" },
+  { name: "DocStuff", tag: "Free DocuSign alternative", pitch: "Unlimited e-signatures with drag-and-drop field placement and audit certificates.", strike: "$10–40/seat/mo + envelope caps", after: "$0, no caps", chips: ["Next.js + SQLite", "pdf-lib"], repo: "https://github.com/JoshuaStorm1017/docstuff", accent: "#f2c462", status: "live" },
+  { name: "LinkStuff", tag: "Free Bitly alternative", pitch: "Unlimited short links, custom slugs, QR codes, privacy-first analytics.", strike: "$35/mo", after: "$0", chips: ["Next.js + SQLite"], repo: "https://github.com/JoshuaStorm1017/linkstuff", accent: "#5bd6e8", status: "live" },
+  { name: "NoteStuff", tag: "Free Notion alternative", pitch: "Local-first block editor with backlinks and full Markdown export. Your notes, your machine.", strike: "their cloud", after: "your machine", chips: ["Next.js + SQLite", "Local-first"], repo: "https://github.com/JoshuaStorm1017/notestuff", accent: "#c593ff", status: "live" },
+  { name: "FormStuff", tag: "Free Typeform alternative", pitch: "One-question-at-a-time forms, logic jumps, quiz scoring — unlimited responses.", strike: "$25+/mo, 10 responses", after: "$0, unlimited", chips: ["Next.js + SQLite"], repo: "https://github.com/JoshuaStorm1017/formstuff", accent: "#ff8fa3", status: "live" },
+  { name: "ReelStuff", tag: "Free Loom alternative", pitch: "Screen + webcam recording, 100% local. Your footage never leaves the machine.", strike: "5-minute cap", after: "no cap", chips: ["Browser", "100% local"], repo: null, accent: "#ff9d66", status: "soon" },
+];
